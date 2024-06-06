@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input1" placeholder="Your name">
+    <input type="text" id="input2" placeholder="Match name">
+    <button onclick="displayText()">Get Love Score</button>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <input type="number" id="input3">
+    <button onclick="showOutput()">Show Output</button>
+    <output type="int" id="output3"></output>
+
+    <script>
+        function displayText() {
+            var text1 = document.getElementById("input1").value;
+            var text2 = document.getElementById("input2").value;
+
+            document.getElementById("output1").innerText = "Text 1: " + text1;
+            document.getElementById("output2").innerText = "Text 2: " + text2;
+        }
+        function showOutput() {
+            const inputNumber = document.getElementById('input3').value;
+            document.getElementById('output3').value = parseInt(inputNumber) * 2;
+        }
+    </script>
+</body>
+</html>
